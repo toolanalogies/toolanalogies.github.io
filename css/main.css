@@ -58,7 +58,6 @@ figcaption {
     font-size: 0.9em;
 }
 
-
 /* for mobile devices */
 @media (max-width: 480px) {
     .float-right {
