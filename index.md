@@ -1,0 +1,5 @@
+---
+title: Creative Robot Tool Use by Counterfactual Reasoning
+layout: default
+---
+We propose a causal reasoning framework for creative robot tool use in which a novel object is correctly identified to functionally substitute for a tool that is no longer available to the robot. During training, our framework discovers properties of the source tool that are causally relevant to the task by conducting counterfactual experiments in a physics-based dynamics model. We reconstruct the geometry of the tool from vision and systematically intervene on its properties using 3D shape editing to generate counterfactual tool variants. During deployment, candidate tools are classified based on their similarity to the source tool with respect to the discovered causal features. By reconstructing the task in a dynamics model, our approach grounds tool use in the physics of the problem. We illustrate our approach in reaching a distant object with different sticks, in scooping candies from a bowl with different kitchen items, and in using different boxes as platforms to step up to retrieve an object from a high shelf. 
