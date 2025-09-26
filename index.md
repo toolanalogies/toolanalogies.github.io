@@ -111,4 +111,4 @@ And after that, the robot can recognize *novel* substitutes to complete the task
 
 <hr>
 
-See the [the full video](images/video.mp4).
+See the [the full video](images/video.mp4) (70MB, 3:55). [HD version](images/video_hd.mp4) (574MB).
