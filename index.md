@@ -11,7 +11,9 @@ Consider a TV remote that falls under the sofa where you cannot reach directly. 
 
 In this work, we show that a similar form of reasoning can be enabled in robots by combining commonsense priors from vision language models (VLMs) with counterfactual reasoning through simulation. We propose **ToolAnalogy**, a novel approach that discovers object properties that are causally related to task success by experimenting with counterfactual objects generated with a 3D semantic object editor, and uses these causal features to classify novel objects as substitutes to carry out the task.
 
+---
 
+Imagine the three scenarios below where the robot completes the task using a *tool*.
 <figure style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%; margin: auto; padding: 0">
     <div style="flex: 1">
         <video width="100%" autoplay loop muted style="flex: 1">
@@ -36,3 +38,77 @@ In this work, we show that a similar form of reasoning can be enabled in robots 
     </div>
 </figure>
 
+What happens when you are in a new environment where the exact source tool is missing? What could you possibly use to hook something, or reach an object on high shelf, or scoop candies? The agent would pick objects based on their features if only it knew which of those features are causally relevant. However, the robot *must* conduct *interventional experiments* to figure out such causal features---experiments that answer questions such as "what happens if the hockey stick happened to be shorter?", "could I stepped on the platform if it was lighter?", or "would a spoon with a flat head work?"
+
+We can now answer these questions using recent advances in computer vision and foundational models. Below are example semantic edits using Ganeshan et al. (2024).
+
+<figure style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%; margin: auto; padding: 0">
+    <div style="flex: 1">
+        <video width="100%" autoplay loop muted style="flex: 1">
+            <source src="images/hockey-edit.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div style="flex: 1">
+        <video width="100%" autoplay loop muted style="flex: 1">
+            <source src="images/hockey-edit.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div style="flex: 1">
+        <video width="100%" autoplay loop muted style="flex: 1">
+            <source src="images/hockey-edit.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</figure>
+
+Once we have a dataset of *counterfactual* objects---objects that are the product of imagination---the robot can test in simulation which of those objects work to figure out the causal features and their boundaries.
+
+<figure style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%; margin: auto; padding: 0">
+    <div style="flex: 1">
+        <video width="100%" autoplay loop muted style="flex: 1">
+            <source src="images/hook-sim.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div style="flex: 1">
+        <video width="100%" autoplay loop muted style="flex: 1">
+            <source src="images/spot-sim.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div style="flex: 1">
+        <video width="100%" autoplay loop muted style="flex: 1">
+            <source src="images/hook-sim.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</figure>
+
+And after that, the robot can recognize *novel* substitutes to complete the task.
+
+<figure style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%; margin: auto; padding: 0">
+    <div style="flex: 1">
+        <video width="100%" autoplay loop muted style="flex: 1">
+            <source src="images/hook-novel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div style="flex: 1">
+        <video width="100%" autoplay loop muted style="flex: 1">
+            <source src="images/spot-novel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div style="flex: 1">
+        <video width="100%" autoplay loop muted style="flex: 1">
+            <source src="images/scoop-novel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</figure>
+
+<hr>
+
+See the [the full video](images/video.mp4).
