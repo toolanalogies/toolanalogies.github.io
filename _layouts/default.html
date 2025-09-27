@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/css/main.css{% if jekyll.environment == 'development' %}?{{ site.time | date: '%s'}}{% endif %}">
+        <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1 id="project_title" style="text-align: center;">Creative Robot Tool Use by Counterfactual Reasoning</h1>
+            </header>
+        </div>
+
+        <section>
+            {{content}}
+        </section>
+    </body>
+</html>
