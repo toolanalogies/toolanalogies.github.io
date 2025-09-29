@@ -51,13 +51,13 @@ We can now answer these questions using recent advances in computer vision and f
     </div>
     <div style="flex: 1">
         <video width="100%" autoplay loop muted style="flex: 1">
-            <source src="images/hockey-edit.mp4" type="video/mp4">
+            <source src="images/box-edit.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
     <div style="flex: 1">
         <video width="100%" autoplay loop muted style="flex: 1">
-            <source src="images/hockey-edit.mp4" type="video/mp4">
+            <source src="images/spoon-edit.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
