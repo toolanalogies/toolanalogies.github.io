@@ -79,7 +79,7 @@ Once we have a dataset of *counterfactual* objects---objects that are the produc
     <div class="figure">
         <div class="subfigure">
             <video width="100%" autoplay loop muted>
-                <source src="images/hook-sim-alt.mp4" type="video/mp4">
+                <source src="images/hook-sim.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -91,7 +91,7 @@ Once we have a dataset of *counterfactual* objects---objects that are the produc
         </div>
         <div class="subfigure">
             <video width="100%" autoplay loop muted>
-                <source src="images/hook-sim.mp4" type="video/mp4">
+                <source src="images/scoop-sim.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
