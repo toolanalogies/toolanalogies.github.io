@@ -8,6 +8,8 @@ body {
     padding-left: 1em;
     padding-right: 1em;
     margin-bottom: 3em;
+    text-align: justify;
+    text-align-last: left;
 }
 
 h1 {
@@ -108,4 +110,24 @@ figcaption {
         text-align: justify;
         text-align-last: left;
     }
+}
+.markdown-body p,
+.markdown-body li,
+.post-content p,
+.post-content li,
+.page-content p,
+.page-content li,
+body p,
+body li {
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;   /* nicer spacing where supported */
+  hyphens: auto;              /* reduce rivers; needs <html lang="en"> */
+}
+
+/* Keep headings/nav/captions left-aligned */
+h1, h2, h3, h4, h5, h6,
+nav,
+figcaption {
+  text-align: left !important;
 }
